@@ -20,6 +20,10 @@ FROM nginx:alpine
 # 复制构建好的 Vue.js 应用到 Nginx 的默认静态文件目录
 COPY --from=0 /app/dist /usr/share/nginx/html
 
+RUN rm /etc/nginx/conf.d/default.conf
+
+ADD default.conf /etc/nginx/conf.d/
+
 # 暴露 Nginx 的默认端口
 EXPOSE 80
 
