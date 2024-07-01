@@ -7,11 +7,9 @@ WORKDIR /app
 # 复制 package.json 和 package-lock.json
 COPY package*.json ./
 
+COPY . .
 # 安装项目依赖
 RUN npm install
-
-# 复制项目代码到工作目录
-COPY . .
 
 RUN npm run build
 
