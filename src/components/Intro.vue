@@ -2,7 +2,7 @@
   <article class="prose dark:prose-invert prose-img:rounded-xl prose-a:text-sky-800 prose-a:dark:text-sky-200 prose-a:font-semibold">
     <h1 id='latex-ocr'>LaTex OCR</h1>
     <h2 id='这是什么'>这是什么？</h2>
-    <p>这是基于开源项目<a href='https://github.com/lukas-blecher/LaTeX-OCR'>LaTex-OCR</a>搭建的<strong>公式图片转LaTex数学公式</strong>应用。算力和技术支持——<a href='https://lcpu.club/'>北京大学Linux俱乐部</a>。</p>
+    <p>这是基于开源项目<a href='https://github.com/lukas-blecher/LaTeX-OCR'>LaTex-OCR</a>搭建的<strong>公式图片转LaTex数学公式</strong>应用，并额外支持Typst数学表达式，LaTex到Typst的公式转换利用了<a href='https://github.com/mitex-rs/mitex'>mitex</a>构建的WASM文件。算力和技术支持——<a href='https://lcpu.   club/'>北京大学Linux俱乐部</a>。</p>  
     
     <p class="hidden dark:block"><img src="https://s2.loli.net/2024/06/30/Oecf1D6lsbANhUG.png" referrerpolicy="no-referrer" alt="图片.png"></p>
 
@@ -15,7 +15,7 @@
     <li>使用截图：利用截图工具截图后，直接在网页中粘贴，即可自动上传并识别。</li>
 
     </ol>
-    <p>可以在左侧文件框内选择文件查看之前的预测结果，服务器不会保留识别记录，切换页面或刷新网页将会导致历史记录消失。</p>
+    <p>可以在左侧文件框内选择文件查看之前的预测结果，服务器不会保留识别记录，切换页面或刷新网页将会导致历史记录消失。选择框中选择的格式将会被用作自动复制的默认格式，此外仍然可以通过点击按钮的方式进行手动复制。</p>
     <h2 id='识别准确率'>识别准确率</h2>
     <p>实测准确率较高，对于复杂公式能够较好的完成识别，下面是一个成功的例子：</p>
     <p>原图：</p>
