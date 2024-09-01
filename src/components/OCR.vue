@@ -162,7 +162,7 @@ onMounted(() => {
       <h2 class="text-xl font-semibold mb-4">Original Image: </h2>
       <img v-if="currentFile" :src="imageURL" alt="" />
       <!-- 骨架屏 -->
-      <el-skeleton v-else animated class="w-full mt-12 px-10">
+      <el-skeleton v-else class="w-full mt-12 px-10">
         <template #template>
           <el-skeleton-item variant="image" style="height: 80px;"/>
         </template>
@@ -205,7 +205,7 @@ onMounted(() => {
           <VueMathjax v-else :formula="generateFormula" />
         </template>
         <!-- 图片骨架 -->
-        <el-skeleton v-else animated class="w-full mt-12">
+        <el-skeleton v-else class="w-full mt-12">
           <template #template>
             <el-skeleton-item variant="image" style="height: 80px;"/>
           </template>
