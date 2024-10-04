@@ -14,10 +14,10 @@ build:
 	  --progress=plain \
 	  --file Dockerfile \
 	  --pull \
-	  --cache-from $(OVERLEAF_BASE_LATEST) \
-	  --cache-from $(OVERLEAF_BASE_BRANCH) \
-	  --tag $(OVERLEAF_BASE_TAG) \
-	  --tag $(OVERLEAF_BASE_BRANCH) \
+	  --cache-from $(LATEX_OCR_LATEST) \
+	  --cache-from $(LATEX_OCR_BRANCH) \
+	  --tag $(LATEX_OCR_BASE_TAG) \
+	  --tag $(LATEX_OCR_BASE_BRANCH) \
 	.
 
 .PHONY: all build
