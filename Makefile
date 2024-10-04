@@ -19,5 +19,5 @@ build:
 	  --tag $(OVERLEAF_BASE_TAG) \
 	  --tag $(OVERLEAF_BASE_BRANCH) \
 	.
-	
-.PHONY: all build-base build-community
+
+.PHONY: all build
