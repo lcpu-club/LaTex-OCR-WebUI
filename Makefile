@@ -14,10 +14,8 @@ build:
 	  --progress=plain \
 	  --file Dockerfile \
 	  --pull \
-	  --cache-from $(LATEX_OCR_LATEST) \
-	  --cache-from $(LATEX_OCR_BRANCH) \
-	  --tag $(LATEX_OCR_BASE_TAG) \
-	  --tag $(LATEX_OCR_BASE_BRANCH) \
+	  --tag $(LATEX_OCR_UI_TAG) \
+	  --tag $(LATEX_OCR_UI_BRANCH) \
 	.
 
 .PHONY: all build
