@@ -136,7 +136,7 @@ onMounted(() => {
     <el-upload
       drag
       class="my-10 w-full self-start"
-      action="/api/predict/"
+      action="/latex-ocr/api/predict/"
       ref="uploader"
       :on-preview="handleSelect"
       :on-change="handleChange"
